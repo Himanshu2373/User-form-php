@@ -10,6 +10,7 @@ $Email=$_POST['Email'];
 $Password=$_POST['Password'];
 $Confirm=$_POST['Confirm'];
 
+
 if($Password === $Confirm)
 {
 
