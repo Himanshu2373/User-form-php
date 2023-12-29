@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .body {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem;
+        }
+        
+        h4{
+            
+            color: white;
+            text-align: left;
+            margin-left:10px ;
+        }
+
+        .left, .right {
+            flex: 1;
+            margin-bottom: 1rem;
+        }
+  
+        input[type="text"], input[type="email"], input[type="password"] {
+            width:90%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+       .content{
+            border: 1px solid black;
+            height: auto;
+       }
+        .header{
+            background-color: rgba(63, 74, 102, 0.919);
+            border: 1px solid black;
+            height: 50px;
+        }
+
+        .instruction {
+            margin-top: 10px;
+            text-align: center;
+            
+        }
+        .instruction{
+            background-color: rgba(63, 74, 102, 0.919);
+            color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        .inst{
+            background-color: rgba(63, 74, 102, 0.919);
+            color: white;
+            margin: 10px;
+        }
+        .button{
+            right: 50%;
+            padding-bottom: 1rem;
+            margin-bottom: 5px;
+            margin-left: 45rem;
+            
+        }
+        #Submit{
+            background-color: rgba(63, 74, 102, 0.919);
+            color: white;
+            border-radius: 5px;
+        }
+        #reset{
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class=" header">
+        <h4>NEW USER</h4>
+    </div>
+
+    <div class="content">
+
+    <form action="Form5.php" method="post">
+    <div class="body">
+        <div class="left">
+            Region<br>
+            <input type="text" name ="Region" placeholder="Select Region" required autofocus><br>
+            Department<br>
+            <input type="text" name ="Department" placeholder="Select Department" required autofocus><br>
+            Employee Code<br>
+            <input type="text" name ="Employee_Code"  placeholder="Enter Employee Code" required autofocus><br>
+            Mobile Number<br>
+            <input type="text" name ="Mobile" placeholder="Enter Mobile No."><br>
+            Password<br>
+            <input type="password" name ="Password" placeholder="Enter Password" required><br>
+        </div>
+        <div class="right">
+            Branch<br>
+            <input type="text" name ="Branch" required autofocus placeholder="Enter Your Branch"><br>
+            Role<br>
+            <input type="text"  name =" Role" placeholder="Select Role" required autofocus><br>
+            Employee Name
+            <input type="text" name ="Employee_Name" placeholder="Enter Employee Name" required autofocus><br>
+            Email<br>
+            <input type="email" name ="Email" placeholder="Email" required><br>
+            
+            Confirm Password<br>
+            <input type="password" name="Confirm" placeholder="Enter Confirm Password" required>
+            <div class="instruction">
+                <span>Password Instruction</span>
+            </div>
+            <div class="inst">
+                <ul>
+                    <li>A password should be alphabetic</li>
+                    <li>First letter of password should be Capital</li>
+                    <li>Password Must contain Special letter(#,$,&,@)</li>
+                    <li>Password Length must be greater than 8 character</li>
+                    <li>One of the most important Password field should not be empty</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="button">
+    <input type="Submit" value="Submit" id="Submit">
+    <input type="reset" value="reset" id="reset">
+</div>
+</form>
+</div>
+</body>
+</html>
